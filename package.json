@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/StephenPaladines/CMS-Mobile-App#readme",
   "dependencies": {
+    "ejs": "^2.6.1",
     "express": "^4.16.3",
-    "npm": "^6.2.0"
+    "mongodb": "^3.1.1"
   }
 }
