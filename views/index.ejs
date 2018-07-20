@@ -7,10 +7,37 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!--   <link rel="stylesheet" type="text/css" href="style/style.css"> -->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Work', 'Hours Per Day'],
+          ['', 0],
+          ['Agents not on Call',      6],
+                  ['Agents on AUX',  2],
+          ['Agents on Call', 11],
+          ['', 0]
+        ]);
+
+        var options = {
+          // title: 'Agent Status',
+          pieHole: 0.4,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+    </script>
 <title>cms</title>
 </head>
 <body>
 <div>
+	<div class="row">
+   		<div id="donutchart" style="width: 50% height: 50%;"></div>
+	</div>
 	<div class="w3-container">
 		<label class="switch">
 		  		<input type="checkbox">
@@ -98,7 +125,7 @@
 				</div>
 				<div class="row">
 					<div class="col-xs-3">
-						<div class="panel panel-heading">
+						<div class="panel panel-heading" id="boxes">
 							Queue 1 
 						</div>
 					</div>
@@ -163,8 +190,7 @@
 		</div>
 		<div class = "col-xs-1"></div>	
 	</div>
-
-
 </div>
+
 </body>
 </html>
