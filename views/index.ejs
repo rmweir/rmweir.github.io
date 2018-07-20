@@ -74,7 +74,7 @@
 					</div>
 				</div>
 				<div style="text-align: right">
-					<button type="button" class="btn btn-success"><span class="glyphicon glyphicon-eye-open">
+                                    <button id="more-info" type="button" class="btn btn-success" onclick='redirect_real()'><span class="glyphicon glyphicon-eye-open">
 				</div>
 				</span>
 				</button>
@@ -111,7 +111,7 @@
 					</div>
 				</div>
 				<div style="text-align: right">
-					<button type="button" class="btn btn-success"><span class="glyphicon glyphicon-eye-open">
+					<button type="button" class="btn btn-success" onclick='redirect_skill()'><span class="glyphicon glyphicon-eye-open">
 				</div>	
 				</span>
 				</button>
@@ -182,4 +182,16 @@
 </div>
 
 </body>
+    <script>function redirect_real() {
+        console.log('hey');
+        window.location.replace('/real_time');}</script>
+
+    <script>function redirect_skill() {
+        console.log('hey');
+        window.location.replace('/agent_skill');}</script>
+
+
+    <script>function redirect_group() {
+        console.log('hey');
+        window.location.replace('/agent_group');}</script>
 </html>
