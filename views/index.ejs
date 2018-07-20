@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -7,7 +8,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <link rel="stylesheet" type="text/css" href="style.css"> 
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <script type="text/javascript">
       google.charts.load("current", {packages:["corechart"]});
@@ -16,147 +18,165 @@
         var data = google.visualization.arrayToDataTable([
           ['Work', 'Hours Per Day'],
           ['', 0],
-          ['Agents not on Call',      6],
-                  ['Agents on AUX',  2],
+          ['Agents not on Call', 6],
+          ['Agents on AUX',  2],
           ['Agents on Call', 11],
           ['', 0]
         ]);
 
         var options = {
-          // title: 'Agent Status',
-          pieHole: 0.4,
+          title: 'Agent Status',
+          pieHole: 0,
         };
 
         var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
         chart.draw(data, options);
       }
     </script>
+
+
 <title>cms</title>
 </head>
-<body style="background-color: #EEEEEE">
+<body>
 <div class="wrapper">
-<!-- 	<div class="row" id="boxes">
-   		<div id="donutchart" style="width: 50% height: 50%;"></div>
-	</div> -->
-<!-- 	<div class="row">
-		<label class="switch">
-		  		<input type="checkbox">
-		  		<span class="slider round"></span>
-		</label>
-	</div> -->
-        <div class="row">
-            <img class="img-responsive col-xs-12" src="https://www.findinall.com/uploaded_files/product/dell_bannerOYsZ.jpg">
-        </div>
-        <div class = "row" id="CMS-skill">
-		<div class = "col-xs-1"></div>
-		<div class = "col-xs-10" id=""> 
-			<div class="panel panel-primary">
-				<div class="panel-heading">
-					<h2>CMS Skill</h2>
-				</div>
-				<div class="col-xs-4" id="boxes">
-					<div class="panel panel-body">Oldest Call:</div>
-				</div>
-				<div class="col-xs-4" id="boxes">
-					<div class="panel panel-body">Agents Staffed:</div>
-				</div>
-				<div class="col-xs-4" id="boxes">
-					<div class="panel panel-body">Agent Active:</div>
-				</div>
-				<div style="text-align: right">
-					<button type="button" class="btn btn-success"><span class="glyphicon glyphicon-eye-open">
-				</div>
-				</span>
-				</button>
-			</div>
-		</div>
-		<div class = "col-xs-1">
-		</div>	
-	</div>
+       <div class = "row" id="CMS-skill">
+              <div class = "col-xs-1"></div>
+              <div class = "col-xs-10" id="">
+
+                     <div class="panel panel-info">
+                           <div class="panel-heading">
+                                  <h2>CMS Skill</h2>
+                           </div>
+                           <div class="row">
+                                  <div class="col-xs-4">
+                                         <div class="panel panel-heading">
+                                                <center>Oldest Call Waiting
+
+                                                <h2><b>00:07:18</h2></b></center>
+                                         </div>
+                                  </div>
+                                  <div class="col-xs-4">
+                                  <div class="panel panel-heading"> 
+                                         <center>Totals Agents Staffed: 
+
+                                         <h2><b>51</h2></b></center>
+                                  </div>
+                                  </div>
+                                  <div class="col-xs-4">
+                                  <div class="panel panel-heading"> 
+                                         <center>Total Agents Active: 
+                                         
+                                         <h2><b>31</h2></b></center>
+                                         </div>
+                                  </div>
+                           </div>
+                           </span>
+                           <div style="text-align: right">
+                                  <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-eye-open">
+                           </div> 
+                           </button>
+                     </div>
+              </div>
+              <div class = "col-xs-1">
+              </div> 
+       </div>
 </div>
-	<div class = "row" id="Agent-skill">
-		<div class = "col-xs-1"></div>
-		<div class = "col-xs-10"> 
-			<div class="panel panel-primary">
-				<div class="panel-heading">
-					<h2>Agent By Skill</h2>
-				</div>
-				<div class="col-xs-3" id="boxes">
-					<div class="panel panel-body">hello</div>
-				</div>
-				<div class="col-xs-3" id="boxes">
-					<div class="panel panel-body">hello</div>
-				</div>
-				<div class="col-xs-3" id="boxes">
-					<div class="panel panel-body">hello</div>
-				</div>
-				<div class="col-xs-3" id="boxes">
-					<div class="panel panel-body">hello</div>
-				</div>
-				<div style="text-align: right">
-					<button type="button" class="btn btn-success"><span class="glyphicon glyphicon-eye-open">				</span>
-					</button>
-				</div>
-			</div>
-		</div>
-		<div class = "col-xs-1"></div>	
-	</div>
 
-	<div class = "row" id="Agent-group">
-		<div class = "col-xs-1"></div>
-		<div class = "col-xs-10"> 
-			<div class="panel panel-primary">
-				<div class="panel-heading">
-					<h2>Agent by Agent Group</h2>
-				</div>
-				<div class="row">
-					<div class="col-xs-3">
-						<div class="panel">
-						    <div class="panel-heading">
-                                                        Queue 1: 
-                                                    <div style="font-size: 20px; font-weight: bold">
-                                                        333
-                                                    </div>
-                                                    </div>
+       <div class = "row" id="Agent-skill">
+              <div class = "col-xs-1"></div>
+              <div class = "col-xs-10"> 
+                     <div class="panel panel-info">
+                           <div class="panel-heading">
+                           <h2>Agent By Skill</h2>
+                           </div>
+                                  <div class="table-responsive">          
+                                    <table class="table">
+                                         <thead>
+                                            <tr>
+                                                <th>Agent Name</th>
+                                                <th>Reason Code</th>
+                                                <th>Time</th>
+                                           </tr>
+                                         </thead>
+                                         <tbody>
+                                           <tr>
+                                                <td>Michael Dell</td>
+                                                <td>6</td>
+                                                <td>00:06:46</td>
+                                           </tr>
+                                                <tr>
+                                                <td>Steve Jobs</td>
+                                                <td></td>
+                                                <td>00:01:01</td>
+                                           </tr>
+                                                <tr>
+                                                <td>Bill Gates</td>
+                                                <td>7</td>
+                                                <td>00:51:19</td>
+                                           </tr>
+                                         </tbody>
+                                    </table>
+                                    </div>
+
+                                  <div style="text-align: right">
+                                         <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-eye-open">
+                                  </div> 
+                           </span>
+                           </button>
+                     </div>
+                            <div class="row">
+              <div id="donutchart" style="width: 50% height: 50%;"></div>
+       </div>
+              </div>
+              <div class = "col-xs-1"></div> 
+       </div>
+       <div class = "row" id="Agent-group">
+              <div class = "col-xs-1"></div>
+                     <div class = "col-xs-10"> 
+                           <div class="panel panel-info">
+                                  <div class="panel-heading">
+                                         <h2>Agent by Agent Group</h2>
+                                  </div>
+                                  <div class="row">
+                                         <div class="col-xs-3">
+                                                <div class="panel panel-heading">
+                                                       <center>Queue #1: 
+
+                                                       <h3><b> 6 </b></h3></center>
                                                 </div>
-					</div>
-					<div class="col-xs-3">
-						<div class="panel">
-						    <div class="panel-heading">
-                                                        Queue 2:
+                                         </div>
+                                         <div class="col-xs-3">
+                                                <div class="panel panel-heading">
+                                                       <center>Queue #2: 
 
-                                                    <div style="font-size: 20px; font-weight: bold">
-                                                        333
-                                                    </div>
-                                                    </div>
-						</div>
-					</div>
-					<div class="col-xs-3">
-						<div class="panel">
-						    <div class="panel-heading">
-                                                        Queue 3:
-                                                    <div style="font-size: 20px; font-weight: bold">
-                                                        333
-                                                    </div>
-                                                    </div>
+                                                       <h3><b> 2 </b></h3></center>
+                                                </div>
+                                         </div>
+                                         <div class="col-xs-3">
+                                                <div class="panel panel-heading">
+                                                       <center>Queue #3: 
 
-						</div>
-					</div>
-					<div class="col-xs-3">
-						<div class="panel">
-						    <div class="panel-heading">
-                                                        Queue 4:
-                                                    <div style="font-size: 20px; font-weight: bold">
-                                                        333
-                                                    </div>
-                                                    </div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class = "col-xs-1"></div>	
-	</div>
+                                                       <h3><b> 7 </b></h3></center>
+                                                </div>
+                                         </div>
+                                         <div class="col-xs-3">
+                                                <div class="panel panel-heading">
+                                                       <center>Queue #4: 
+
+                                                       <h3><b> 1 </b></h3></center>
+                                                </div>
+                                         </div>
+                                  </div>
+                                  <div style="text-align: right">
+                                         <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-eye-open">
+                                  </div> 
+                                  </span>
+                                  </button>
+                                  <div class="panel-footer">Total Calls Waiting: <b> 16 </b></div>
+                           </div>
+                     </div>
+              <div class = "col-xs-1"></div>    
+       </div>
 </div>
 
 </body>
