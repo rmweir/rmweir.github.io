@@ -33,8 +33,6 @@
         chart.draw(data, options);
       }
     </script>
-
-
 <title>cms</title>
 </head>
 <body>
@@ -50,22 +48,26 @@
                            <div class="row">
                                   <div class="col-xs-4">
                                          <div class="panel panel-heading">
-                                                <center>Oldest Call Waiting
-                                                <h2><b>07:18</h2></b></center>
+                                                <center>Oldest Call Waiting:
+                                                <h2><b id="rnd7">00:</b><b id ="rnd"></b><b>:</b><b id ="rnd2">
+
+                                                </h2></b></center>
+
                                          </div>
                                   </div>
                                   <div class="col-xs-4">
                                   <div class="panel panel-heading"> 
-                                         <center>Totals Agents Staffed: 
-
-                                         <h2><b>51</h2></b></center>
+                                         <center>Total Agents Staffed:
+                                         <h2><b id="rnd3">
+                                            
+                                         </h2></b></center>
                                   </div>
                                   </div>
                                   <div class="col-xs-4">
                                   <div class="panel panel-heading"> 
                                          <center>Total Agents Active: 
                                          
-                                         <h2><b>31</h2></b></center>
+                                         <h2><b id="rnd4"></h2></b></center>
                                          </div>
                                   </div>
                            </div>
@@ -101,11 +103,11 @@
                                            <tr>
                                                 <td>Michael Dell</td>
                                                 <td>6</td>
-                                                <td>06:46</td>
+                                                <td>02:45</td>
                                            </tr>
                                                 <tr>
                                                 <td>Steve Jobs</td>
-                                                <td></td>
+                                                <td>10</td>
                                                 <td>01:01</td>
                                            </tr>
                                                 <tr>
@@ -141,21 +143,21 @@
                                                 <div class="panel panel-heading">
                                                        <center>Queue #1: 
 
-                                                       <h3><b> 6 </b></h3></center>
+                                                       <h3><b id ="rnd6"></b></h3></center>
                                                 </div>
                                          </div>
                                          <div class="col-xs-4">
                                                 <div class="panel panel-heading">
                                                        <center>Queue #2: 
 
-                                                       <h3><b> 2 </b></h3></center>
+                                                       <h3><b id="rnd5"> </b></h3></center>
                                                 </div>
                                          </div>
                                          <div class="col-xs-4">
                                                 <div class="panel panel-heading">
                                                        <center>Queue #3: 
 
-                                                       <h3><b> 7 </b></h3></center>
+                                                       <h3><b id="rand8"> 7 </b></h3></center>
                                                 </div>
                                          </div>
                                   </div>
@@ -164,13 +166,65 @@
                                   </div> 
                                   </span>
                                   </button>
-                                  <div class="panel-footer">Total Calls Waiting: <b> 15</b></div>
+                                  <div class="panel-footer">Total Calls Waiting: <b id="rnd"></b></div>
                            </div>
                      </div>
               <div class = "col-xs-1"></div>    
        </div>
 </div>
 
+<script type="text/javascript">
+
+   function randWithVariation(min, max, variation) {
+      var seed = (Math.floor(Math.random() * max) % (max - min)) + min; // attempts to keep the result within the bounds
+      var min = min, max = max, variation = variation;
+      var r = function() {
+        var offset = Math.floor(Math.random() * variation);
+        if (Math.random() < 0.5) offset *= -1; // chance that number will decrease
+        seed += offset;
+        if (seed < min) return max - seed; // also attempts to keep the result within the bounds
+        if (seed > max) return min + (seed - max);
+        else return seed;
+      }
+      return r;
+  }
+
+  var rand = randWithVariation(10, 59, 0.1);
+  document.getElementById('rnd').innerHTML = rand();
+  setInterval(() => {
+    document.getElementById('rnd').innerHTML = rand();
+  }, 7000); 
+
+    var rand = randWithVariation(10, 59, 10);
+  document.getElementById('rnd2').innerHTML = rand();
+  setInterval(() => {
+    document.getElementById('rnd2').innerHTML = rand();
+  }, 7000); 
+
+    var rand = randWithVariation(40, 59, 5);
+  document.getElementById('rnd3').innerHTML = rand();
+  setInterval(() => {
+    document.getElementById('rnd3').innerHTML = rand();
+  }, 7000); 
+
+      var rand = randWithVariation(10, 39, 10);
+  document.getElementById('rnd4').innerHTML = rand();
+  setInterval(() => {
+    document.getElementById('rnd4').innerHTML = rand();
+  }, 7000); 
+
+    var rand = randWithVariation(10, 59, 10);
+  document.getElementById('rnd5').innerHTML = rand();
+  setInterval(() => {
+    document.getElementById('rnd5').innerHTML = rand();
+  }, 7000); 
+
+    var rand = randWithVariation(10, 59, 10);
+  document.getElementById('rnd6').innerHTML = rand();
+  setInterval(() => {
+    document.getElementById('rnd6').innerHTML = rand();
+  }, 7000); 
+</script>
 </body>
 <script> function redirect_real() {
             window.location.replace('/real_time');}</script>

@@ -86,3 +86,13 @@ input:checked + .slider:before {
 .wrapper{
 	margin-top: 5%;
 }
+
+#rnd2,#rnd,#rnd3,#rnd4,#rnd5,#rnd6,#rand8,#rnd7 {
+  animation: blinker 7s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
