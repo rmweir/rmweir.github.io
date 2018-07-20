@@ -71,7 +71,7 @@
                            </div>
                            </span>
                            <div style="text-align: right">
-                                  <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-eye-open">
+                                  <button type="button" class="btn btn-success" onclick="redirect_real()"><span class="glyphicon glyphicon-eye-open">
                            </div> 
                            </button>
                      </div>
@@ -118,7 +118,7 @@
                                     </div>
 
                                   <div style="text-align: right">
-                                         <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-eye-open">
+                                         <button type="button" class="btn btn-success" onclick="redirect_skill()"><span class="glyphicon glyphicon-eye-open">
                                   </div> 
                            </span>
                            </button>
@@ -160,7 +160,7 @@
                                          </div>
                                   </div>
                                   <div style="text-align: right">
-                                         <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-eye-open">
+                                         <button type="button" class="btn btn-success" onclick="redirect_group()"><span class="glyphicon glyphicon-eye-open">
                                   </div> 
                                   </span>
                                   </button>
@@ -172,4 +172,14 @@
 </div>
 
 </body>
+<script> function redirect_real() {
+            window.location.replace('/real_time');}</script>
+</script>
+<script> function redirect_skill() {
+            window.location.replace('/agent_skill');}</script>
+</script>
+<script> function redirect_group() {
+            window.location.replace('/agent_group');}</script>
+</script>
 </html>
+

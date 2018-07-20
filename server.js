@@ -20,6 +20,20 @@ app.get('/', function(req, res) {
     // res.render('index.ejs', {agents: result});
 });
 
+app.get('/real_time', function(req, res) {
+    res.render('real_time.ejs');
+});
+
+
+app.get('/agent_skill', function(req, res) {
+    res.render('agent_skill.ejs');
+});
+
+
+app.get('/agent_group', function(req, res) {
+    res.render('agent_group.ejs');
+});
+
 app.listen(3000, function() {
     console.log('yooo');
 });
