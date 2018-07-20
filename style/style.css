@@ -61,6 +61,10 @@ input:checked + .slider:before {
 	/*border-radius: 25px;*/
 }
 
+#real_title{
+	color: #1EBEF0 
+}
+
 .vertical-center {
   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
   min-height: 100vh; /* These two lines are counted as one :-)       */
@@ -72,6 +76,10 @@ input:checked + .slider:before {
 .main-container{
 	text-align: center;
 	margin: 10px;
+}
+
+.oldest-call{
+	background-color: #F60823;
 }
 
 #CMS-skill{
