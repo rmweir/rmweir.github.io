@@ -4,6 +4,7 @@ const mongodb = require('mongodb');
 
 const dburl = 'mongodb://cws:cwscws1@ds141611.mlab.com:41611/cms-mobile-app';
 app.use(express.static('public'));
+app.use(express.static(__dirname + '/style'));
 app.set('view engine', 'ejs');
 
 app.get('/', function(req, res) {

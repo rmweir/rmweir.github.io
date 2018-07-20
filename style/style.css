@@ -1,3 +1,5 @@
+
+
 .switch input {display:none;}
 
 .slider {
@@ -62,4 +64,8 @@ input:checked + .slider:before {
 .main-container{
 	text-align: center;
 	margin: 10px;
+}
+
+#CMS-skill{
+	
 }
