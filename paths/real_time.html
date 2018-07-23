@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<title>Skill Real Time</title>
+</head>
+<body >
+<div class="row">
+    <div class="col-xs-1"></div>
+    <div class="col-xs-10">
+    <div class="panel panel-primary">
+        <div class="panel-heading text-center"><h3>Call List <span class="glyphicon glyphicon-earphone"></span></h3></div>
+
+        <div class="table-responsive">          
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Call #</th>
+                        <th>Code</th>
+                        <th>Wait Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>01</td>
+                        <td>00:46</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>02</td>
+                        <td>01:01</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>11</td>
+                        <td>1:10</td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>01</td>
+                        <td>00:46</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>02</td>
+                        <td>01:01</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>11</td>
+                        <td>1:10</td>
+                    </tr>
+
+                    <tr>
+                        <td>7</td>
+                        <td>21</td>
+                        <td>00:26</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>02</td>
+                        <td>0:11</td>
+                    </tr>
+                    <tr class="oldest-call" style="background-color: red">
+                        <td>9</td>
+                        <td>11</td>
+                        <td>2:10</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+    </div>
+    <div class="col-xs-1"></div>
+</div>
+
+<div class="row">
+    <div class="col-xs-1"></div>
+    <div class="col-xs-10">
+    <div class="panel panel-primary">
+        <div class="panel-heading text-center"><h3>Inactive Agents <span class="glyphicon glyphicon-user"></span></h3></div>
+
+        <div class="table-responsive">          
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Agent #</th>
+                        <th>Reason</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>122381</td>
+                        <td>Break</td>
+
+                        <td><button class="btn btn-warning">Ping <span class="glyphicon glyphicon-flash"></span></button></td>
+                    </tr>
+                    <tr>
+                        <td>224881</td>
+                        <td>Training</td>
+
+                        <td><button class="btn btn-warning">Ping <span class="glyphicon glyphicon-flash"></span></button></td>
+                    </tr>
+                    <tr>
+                        <td>311912</td>
+                        <td>Mentoring</td>
+                        <td><button class="btn btn-warning">Ping <span class="glyphicon glyphicon-flash"></span></button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <button onclick="redirect_real()" class="btn btn-info">Home</button>
+    </div>
+    <div class="col-xs-1"></div>
+</div>
+<script> function redirect_real() {
+window.location.replace('dashboard.html');}</script>
+</body>
