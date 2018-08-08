@@ -3,7 +3,7 @@ hosting hackathon cms
 
 ## Technical Information
 The main screen is is an adoption of a template and is meant strictly for prototyping. The details view is written using regular html 
-with bootstrap. This prototype is mostly contained by the files: index.html and real_time.html
+with bootstrap. This prototype is mostly contained by the files: index.html and real_time.html. The real_time.html file stands as a good example of how the first page could be written so it does not rely on a template or many other dependencies. This page could be entirely recreated with bootstrap panels.
 
 Originally we were working towards a full fledged application. If one wishes to move forward with this project I would recommend looking
 at modeling after these files for the backend portion. The design involved using node (in the server.js file) for retrieving information 
